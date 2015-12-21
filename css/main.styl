@@ -94,18 +94,33 @@ header
   .icon-web-delopment
     content url("../img/web-development.png")
 
+  .icon-product-design
+    content url("../img/product-design.png")
+
+  .icon-ui
+    content url("../img/ui.png")
+
+  .icon-animations
+    content url("../img/animations.png")
+
   h2
     padding 40px 0 100px
   h4
     color blue
+    padding-top 50px
   p
     color dark-grey
     font-size 16px
     font-weight 500
     line-height 35px
+    padding-bottom 50px
 
 .clients
   background-color light-blue
+  padding-bottom 100px
+  .client-item
+    width 285px
+    height 82px
 
 
 .expert-in,.clients,.about-me,.latest-works
@@ -113,6 +128,7 @@ header
     color blue
     font-size 50px
     font-weight 300
+    padding 50px 0 50px
 
 .footer
   background-color #e8f3ff
@@ -128,7 +144,50 @@ header
     margin auto
 
 .latest-works
+  h2
+    padding 50px 0 50px
   .layer
     background-color #f4f4f4
     border 1px solid #f4f4f4
     border-radius 10px
+    margin-bottom 50px
+    min-height 243px
+    padding 15px
+  .works-item
+    padding 0 10px 0 10px
+    img
+      display inline
+
+.icon-expert
+  height 131px
+  width 131px
+  display inline-flex
+  border 1px solid #b7c0c9
+  border-radius 100%
+
+@media screen and (max-width: 991px) {
+  .flex-container{
+    flex-wrap wrap
+  }
+  .client-item{
+    padding 20px 0
+    margin 0 auto
+  }
+
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
