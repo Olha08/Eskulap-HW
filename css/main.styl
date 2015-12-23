@@ -11,12 +11,14 @@ body
 .flex-container
   display flex
 
-header
+.cookies
   background-color #194277
   p
     color white
     padding 25px 0
     margin auto
+
+
 
 .btn
   border-radius 25px
@@ -37,6 +39,7 @@ header
     color white
     font-size 50px
     font-weight 900
+    padding-top 40px
   p
     color white
     font-size 16px
@@ -44,15 +47,6 @@ header
     line-height 35px
     padding-top 25px
 
-  .circle
-    width 100px
-    height 100px
-    background white
-    -moz-border-radius 50px
-    -webkit-border-radius 50px
-    border-radius 50px
-    margin 0 auto
-    margin-bottom 40px
 
   .fa
     color white
@@ -165,6 +159,22 @@ header
   border 1px solid #b7c0c9
   border-radius 100%
 
+.navbar-default
+  background-color transparent
+  border-color transparent
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover
+  background-color transparent
+
+.navbar-default .navbar-toggle
+  border-color transparent
+
+.navbar-default .navbar-toggle .icon-bar
+  background-color white
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form
+  border-color blue
+
 @media screen and (max-width: 991px) {
   .flex-container{
     flex-wrap wrap
@@ -173,7 +183,25 @@ header
     padding 20px 0
     margin 0 auto
   }
+  .footer .col-md-2{
+    margin 0 auto
+  }
 
+  .latest-works .works-item img{
+
+    width 100%
+  }
+
+  .latest-works .layer {
+
+    min-height auto
+  }
+
+  .clients .client-item {
+
+    width auto
+    height auto
+  }
 }
 
 @media (min-width: 768px) {
@@ -191,3 +219,33 @@ header
     width: 1170px;
   }
 }
+
+
+.navbar-default .navbar-nav>li>a
+  color white
+
+
+@media (min-width: 768px) {
+
+  .navbar-collapse.collapse {
+    display none!important
+    overflow auto!important
+  }
+
+  .navbar-toggle, .collapse.in {
+
+    display block!important
+  }
+
+  .navbar-collapse.in{
+
+    overflow-y visible!important
+  }
+
+  .navbar-header, .navbar-nav, .navbar-nav>li {
+    float none
+  }
+
+
+}
+
